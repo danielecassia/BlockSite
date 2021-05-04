@@ -1,6 +1,6 @@
 "use strict";
 
-var connection = new signalR.HubConnectionBuilder().withUrl("/chatHub").build();
+var connection = new signalR.HubConnectionBuilder().withUrl("http://192.168.0.106:5000/chatHub").configureLogging(signalR.LogLevel.Information).withAutomaticReconnect().build();
 
 //Disable send button until connection is established
 document.getElementById("sendButton").disabled = true;
