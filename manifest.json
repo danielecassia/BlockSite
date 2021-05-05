@@ -7,7 +7,13 @@
     "options_page": "options.html",
     "permissions": ["storage", "tabs"],
     "background": {
-      "scripts": ["background.js"],
+      "scripts": ["signalr.min.js", "background.js"],
+      //"page": "cliente.html",
       "persistent": false
     }
+    // "content_scripts": [ {
+
+    //   "js":["signalr.min.js"],
+    //   "matches": ["*://*.com/*"]
+    // }]
   }
